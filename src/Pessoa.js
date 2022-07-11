@@ -1,3 +1,4 @@
+import fruit from "./image/fruit";
 import React, { Component } from "react";
 
 export class Pessoa extends Component {
@@ -30,7 +31,7 @@ export class Pessoa extends Component {
         <ul>
           {this.state.musicas.map((musica, index) => {
             return (
-              <li>
+              <li key={index}>
                 Musica {index + 1}
                 <ul>{`Nome da música: ${musica.nome}`}</ul>
                 <ul>{`Nome da banda: ${musica.banda}`}</ul>
