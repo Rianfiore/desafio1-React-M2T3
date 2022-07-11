@@ -1,4 +1,5 @@
 import { Pessoa } from "./Pessoa";
+import "./App.css";
 
 function App() {
   return (

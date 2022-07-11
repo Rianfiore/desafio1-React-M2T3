@@ -1,4 +1,4 @@
-import fruit from "./image/fruit";
+import food from "./image/food.webp";
 import React, { Component } from "react";
 
 export class Pessoa extends Component {
@@ -28,6 +28,7 @@ export class Pessoa extends Component {
         <h1>{`Meu nome é ${this.state.nome}`}</h1>
         <h2>{`Eu tenho ${this.state.idade} anos de idade`}</h2>
         <h3>{`Minha comida favorita é ${this.state.comida_favorita}`}</h3>
+        <img src={food} alt="Comida favorita" />
         <ul>
           {this.state.musicas.map((musica, index) => {
             return (
